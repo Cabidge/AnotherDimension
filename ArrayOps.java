@@ -23,4 +23,14 @@ public class ArrayOps {
         
         return large;
     }
+
+    public static int[] sumRows(int[][] matrix) {
+        int[] out = new int[matrix.length];
+
+        for (int i = 0; i < matrix.length; i++) {
+            out[i] = sum(matrix[i]);
+        }
+
+        return out;
+    }
 }
