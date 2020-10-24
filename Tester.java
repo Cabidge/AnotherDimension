@@ -68,6 +68,31 @@ public class Tester {
         // expected output:
         // [3, -4, 16. -9]
 
-        
+        // Magic:
+        int[][] X = {
+            {1, 2, 3, 4},
+            {2, 3, 4, 1},
+            {3, 4, 1, 2}
+        };  //this is rowMagic but NOT colMagic
+
+        int[][] Y = {
+            {1, 1, 1},
+            {2, 2, 2},
+            {3, 3, 3}
+        };  //this is colMagic but NOT rowMagic
+
+        int[][] Z = {
+            {2, 2, 2},
+            {2, 2, 2}
+        };  //this is both colMagic AND rowMagic
+        System.out.println("\nisMagic:");
+        System.out.println("isRowMagic:");
+        System.out.println(ArrayOps.isRowMagic(X)); // T
+        System.out.println(ArrayOps.isRowMagic(Y)); // F
+        System.out.println(ArrayOps.isRowMagic(Z)); // T
+        System.out.println("isColMagic:");
+        System.out.println(ArrayOps.isColMagic(X)); // F
+        System.out.println(ArrayOps.isColMagic(Y)); // T
+        System.out.println(ArrayOps.isColMagic(Z)); // T
     }
 }
