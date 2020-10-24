@@ -77,4 +77,9 @@ public class ArrayOps {
         }
         return true;
     }
+
+    // 5c
+    public static boolean isColMagic(int[][] matrix) {
+        return isRowMagic(rowsToCols(matrix)); // converts rows to columns then checks if new rows are magic
+    }
 }
