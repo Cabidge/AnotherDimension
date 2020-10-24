@@ -1,5 +1,8 @@
+import java.util.Arrays;
+
 public class Tester {
     public static void main(String[] args) {
+        /* Old Tests
         int[] a = {1, 4, 3};
         System.out.println("Sum of 1, 4, 3:");
         System.out.println(ArrayOps.sum(a)); // Expected 8
@@ -24,5 +27,29 @@ public class Tester {
         }
         System.out.println("\nSum all:");
         System.out.println(ArrayOps.sum(b)); // Expected 36
+        */
+
+        int[][] A = { // 2d array
+            {  1,  0, 12, -1},
+            {7, -2,  2,  1},
+            {-5, -2,  2, -9}
+        };
+        int[] B = {1, 3, 5}; // 1d array
+
+        System.out.println(Arrays.toString(ArrayOps.sumRows(A)));
+        // expected output:
+        // [12, 8, -14]
+
+        System.out.println(Arrays.toString(ArrayOps.largestInRows(A)));
+        // expected output:
+        // [12, 7, 2]
+
+        System.out.println(ArrayOps.sum(B)); 
+        // expected output:
+        // 9
+
+        System.out.println( ArrayOps.sum(A)); //this calls the overloaded 2d array version!
+        // expected output:
+        // 6
     }
 }
