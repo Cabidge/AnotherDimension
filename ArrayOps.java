@@ -82,4 +82,12 @@ public class ArrayOps {
     public static boolean isColMagic(int[][] matrix) {
         return isRowMagic(rowsToCols(matrix)); // converts rows to columns then checks if new rows are magic
     }
+
+    // 5d
+    public static boolean isLocationMagic(int[][] matrix, int row, int col) {
+        // These two lines are one of the most inefficient lines of code I've ever seen, but at least it's readable-ish?
+        int sumR = sumRows(matrix)[row];
+        int sumC = sumCols(matrix)[col];
+        return sumR == sumC;
+    }
 }

@@ -94,5 +94,14 @@ public class Tester {
         System.out.println(ArrayOps.isColMagic(X)); // F
         System.out.println(ArrayOps.isColMagic(Y)); // T
         System.out.println(ArrayOps.isColMagic(Z)); // T
+
+        // Location Magic
+        int[][] E = {
+            {2, 4, 4},
+            {2, 2, 2}
+        };
+        System.out.println("isLocationMagic:");
+        System.out.println(ArrayOps.isLocationMagic(E, 0, 1)); // F
+        System.out.println(ArrayOps.isLocationMagic(E, 1, 1)); // T
     }
 }
