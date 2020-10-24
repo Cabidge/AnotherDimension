@@ -67,5 +67,7 @@ public class Tester {
         System.out.println(Arrays.toString(ArrayOps.sumCols(A)));
         // expected output:
         // [3, -4, 16. -9]
+
+        
     }
 }
