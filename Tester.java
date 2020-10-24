@@ -51,5 +51,12 @@ public class Tester {
         System.out.println( ArrayOps.sum(A)); //this calls the overloaded 2d array version!
         // expected output:
         // 6
+
+        int[][] C = ArrayOps.rowsToCols(A);
+        System.out.println("\nrowsToCols:");
+        System.out.println("Original:");
+        System.out.println(Arrays.deepToString(A).replace("],","],\n"));
+        System.out.println("Swapped:");
+        System.out.println(Arrays.deepToString(C).replace("],","],\n"));
     }
 }
