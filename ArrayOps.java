@@ -43,4 +43,9 @@ public class ArrayOps {
 
         return out;
     }
+
+    // 4e
+    public static int sum(int[][] arr) {
+        return sum(sumRows(arr));
+    }
 }

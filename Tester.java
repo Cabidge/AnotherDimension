@@ -22,5 +22,7 @@ public class Tester {
         for (int i = 0; i < x.length; i++) {
            System.out.println(y[i]);
         }
+        System.out.println("\nSum all:");
+        System.out.println(ArrayOps.sum(b)); // Expected 36
     }
 }
